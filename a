@@ -1,0 +1,367 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFF.....F.....F..FF.FFF......
+
+Failures:
+
+  1) User pages profile page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x0000000310c018>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/requests/user_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  2) User pages profile page 
+     Failure/Error: let(:user) { FactoryGirl.create(:user) }
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x000000033c4fd0>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/requests/user_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  3) User pages signup with invalid information should not create a user
+     Failure/Error: before { visit signup_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/user_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  4) User pages signup with invalid information after submission 
+     Failure/Error: before { visit signup_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/user_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  5) User pages signup with invalid information after submission 
+     Failure/Error: before { visit signup_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/user_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  6) User pages signup with valid information should create a user
+     Failure/Error: before { visit signup_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/user_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  7) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/user_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  8) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/user_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  9) Authentication signin page 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  10) Authentication signin page 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  11) Authentication signin with invalid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  12) Authentication signin with invalid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  13) Authentication signin with invalid information after visiting another page 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  14) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  15) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  16) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  17) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/authentication_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  18) Static pages should have the right links on the layout
+     Failure/Error: visit root_path
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:22:in `block (2 levels) in <top (required)>'
+
+  19) Static pages Home page 
+     Failure/Error: before { visit root_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  20) Static pages Home page it should behave like all static pages 
+     Failure/Error: before { visit root_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:17
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  21) Static pages Home page it should behave like all static pages 
+     Failure/Error: before { visit root_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:17
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  22) Static pages About page it should behave like all static pages 
+     Failure/Error: before { visit about_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:54
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:50:in `block (3 levels) in <top (required)>'
+
+  23) Static pages About page it should behave like all static pages 
+     Failure/Error: before { visit about_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:54
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:50:in `block (3 levels) in <top (required)>'
+
+  24) Static pages Help page it should behave like all static pages 
+     Failure/Error: before { visit help_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:46
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  25) Static pages Help page it should behave like all static pages 
+     Failure/Error: before { visit help_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:46
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  26) Static pages Contact page it should behave like all static pages 
+     Failure/Error: before { visit contact_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:62
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:58:in `block (3 levels) in <top (required)>'
+
+  27) Static pages Contact page it should behave like all static pages 
+     Failure/Error: before { visit contact_path }
+     ActionView::Template::Error:
+       undefined method `find_by_remember_token' for #<Class:0x00000002f6cd98>
+     Shared Example Group: "all static pages" called from ./spec/requests/static_pages_spec.rb:62
+     # ./app/helpers/sessions_helper.rb:17:in `current_user'
+     # ./app/helpers/sessions_helper.rb:9:in `signed_in?'
+     # ./app/views/layouts/_header.html.erb:9:in `_app_views_layouts__header_html_erb___3374542349245443933_30736040'
+     # ./app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___3727253327857873180_22193580'
+     # ./spec/requests/static_pages_spec.rb:58:in `block (3 levels) in <top (required)>'
+
+  28) User 
+     Failure/Error: it { should respond_to(:remember_token) }
+       expected #<User id: nil, name: "Example User", email: "user@example.com", created_at: nil, updated_at: nil, password_digest: "$2a$04$OkMqvtzZBSmBX495JK/rUef38d/W2k0/lYf2oc1y6HU5..."> to respond to :remember_token
+     # ./spec/models/user_spec.rb:26:in `block (2 levels) in <top (required)>'
+
+  29) User when email address is already taken 
+     Failure/Error: user_with_same_email.save
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x000000035a9238>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/models/user_spec.rb:71:in `block (3 levels) in <top (required)>'
+
+  30) User email address with mixed case should be saved as all lower-case
+     Failure/Error: @user.save
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x00000003a88600>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/models/user_spec.rb:82:in `block (3 levels) in <top (required)>'
+
+  31) User remember token remember_token 
+     Failure/Error: before { @user.save }
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x000000030435c8>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/models/user_spec.rb:124:in `block (3 levels) in <top (required)>'
+
+  32) User return value of authenticate method with valid password 
+     Failure/Error: before { @user.save }
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x00000003562ba8>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/models/user_spec.rb:108:in `block (3 levels) in <top (required)>'
+
+  33) User return value of authenticate method with invalid password 
+     Failure/Error: before { @user.save }
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x000000037c3a78>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/models/user_spec.rb:108:in `block (3 levels) in <top (required)>'
+
+  34) User return value of authenticate method with invalid password 
+     Failure/Error: before { @user.save }
+     NoMethodError:
+       undefined method `remember_token=' for #<User:0x00000003a06010>
+     # ./app/models/user.rb:33:in `create_remember_token'
+     # ./spec/models/user_spec.rb:108:in `block (3 levels) in <top (required)>'
+
+Finished in 1.49 seconds
+53 examples, 34 failures
+
+Failed examples:
+
+rspec ./spec/requests/user_pages_spec.rb:11 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:12 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:22 # User pages signup with invalid information should not create a user
+rspec ./spec/requests/user_pages_spec.rb:29 # User pages signup with invalid information after submission 
+rspec ./spec/requests/user_pages_spec.rb:30 # User pages signup with invalid information after submission 
+rspec ./spec/requests/user_pages_spec.rb:42 # User pages signup with valid information should create a user
+rspec ./spec/requests/user_pages_spec.rb:50 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:51 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/authentication_pages_spec.rb:10 # Authentication signin page 
+rspec ./spec/requests/authentication_pages_spec.rb:11 # Authentication signin page 
+rspec ./spec/requests/authentication_pages_spec.rb:20 # Authentication signin with invalid information 
+rspec ./spec/requests/authentication_pages_spec.rb:21 # Authentication signin with invalid information 
+rspec ./spec/requests/authentication_pages_spec.rb:25 # Authentication signin with invalid information after visiting another page 
+rspec ./spec/requests/authentication_pages_spec.rb:37 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:39 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:38 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:40 # Authentication signin with valid information 
+rspec ./spec/requests/static_pages_spec.rb:21 # Static pages should have the right links on the layout
+rspec ./spec/requests/static_pages_spec.rb:18 # Static pages Home page 
+rspec ./spec/requests/static_pages_spec.rb:8 # Static pages Home page it should behave like all static pages 
+rspec ./spec/requests/static_pages_spec.rb:9 # Static pages Home page it should behave like all static pages 
+rspec ./spec/requests/static_pages_spec.rb:8 # Static pages About page it should behave like all static pages 
+rspec ./spec/requests/static_pages_spec.rb:9 # Static pages About page it should behave like all static pages 
+rspec ./spec/requests/static_pages_spec.rb:8 # Static pages Help page it should behave like all static pages 
+rspec ./spec/requests/static_pages_spec.rb:9 # Static pages Help page it should behave like all static pages 
+rspec ./spec/requests/static_pages_spec.rb:8 # Static pages Contact page it should behave like all static pages 
+rspec ./spec/requests/static_pages_spec.rb:9 # Static pages Contact page it should behave like all static pages 
+rspec ./spec/models/user_spec.rb:26 # User 
+rspec ./spec/models/user_spec.rb:74 # User when email address is already taken 
+rspec ./spec/models/user_spec.rb:80 # User email address with mixed case should be saved as all lower-case
+rspec ./spec/models/user_spec.rb:125 # User remember token remember_token 
+rspec ./spec/models/user_spec.rb:112 # User return value of authenticate method with valid password 
+rspec ./spec/models/user_spec.rb:118 # User return value of authenticate method with invalid password 
+rspec ./spec/models/user_spec.rb:119 # User return value of authenticate method with invalid password 
+
+Randomized with seed 26583
+
